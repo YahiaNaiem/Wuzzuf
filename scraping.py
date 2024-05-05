@@ -44,7 +44,7 @@ def scrape_jobs_data(jobs_list):
         json.dump(all_jobs_data, json_file, indent=4)
 
 
-jobs_list = ['data scientist', 'data analyst', 'web developer', 'web designer', 'HR', 'business developer']  # List of job searches
+jobs_list = ['data scientist', 'data analyst', 'web developer', 'web designer', 'HR', 'business developer', 'mobile development', 'flutter developer']  # List of job searches
 
 with open('jobs_data.json', 'r') as f:
     data = json.load(f)
