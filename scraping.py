@@ -44,7 +44,7 @@ def scrape_jobs_data(jobs_list):
         json.dump(all_jobs_data, json_file, indent=4)
 
 
-jobs_list = ['data scientist', 'data analyst', 'web developer', 'web designer', 'HR', 'buisness developer']  # List of job searches
+jobs_list = ['data scientist', 'data analyst', 'web developer', 'web designer', 'HR', 'business developer']  # List of job searches
 
 with open('jobs_data.json', 'r') as f:
     data = json.load(f)
@@ -56,4 +56,4 @@ unique = [job for job in jobs_list if job not in json_jobs_list]
 print(unique)
 
 
-#scrape_jobs_data(unique)
+scrape_jobs_data(unique)

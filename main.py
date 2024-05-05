@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import json
-from scraping import scrape_jobs_data
+
 
 app = FastAPI()
 
